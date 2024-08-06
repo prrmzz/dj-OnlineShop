@@ -7,11 +7,11 @@ from django.conf import settings
 
 
 urlpatterns = [
+
     path('admin/', admin.site.urls),
     path('main/', ProductList, name='list of products'),
     path('main/<str:category_name>/', include('products.urls')),
-    path('api/', include('api.urls'), name='api page'),
-    path('api-auth/', include('rest_framework.urls'))
+
 ] + static(settings.MEDIA_ROOT, document_root=settings.MEDIA_ROOT)
 
 

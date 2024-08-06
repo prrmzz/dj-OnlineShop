@@ -41,11 +41,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+
     'products',
     'pol.apps.PolAppConfig',
     'partner.apps.PartnerAppConfig',
     'basket.apps.BasketAppConfig',
-    'api.apps.ApiAppConfig',
+
+
     'rest_framework'
 ]
 
