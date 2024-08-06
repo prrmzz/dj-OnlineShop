@@ -1,12 +1,9 @@
-'''
 from django.shortcuts import render
 from rest_framework import generics
-# from aproduct.models import Product
-from .serializers import ProductSerializer
+from products.models import Product
+from .serializers import MainSerializer
+
 
 class ProductListSerializer(generics.ListAPIView):
     queryset = Product.objects.all()
-    serializer_class = ProductSerializer
-
-# Create your views here.
-'''
+    serializer_class = MainSerializer

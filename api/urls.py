@@ -1,6 +1,6 @@
 from django.urls import path, include
-# from .views import ProductListSerializer
+from .views import MainSerializer
 
 urlpatterns = [
-  #  path('', ProductListSerializer.as_view())
+    path('main/', MainSerializer),
 ]
